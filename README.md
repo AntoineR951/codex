@@ -12,3 +12,14 @@ cd frontend
 npm install # nécessite l'accès au registre npm
 npm run dev
 ```
+
+## Prototypes HTML
+
+Le dossier `prototypes/` contient des maquettes statiques en HTML :
+
+- `index.html` : page d'accueil
+- `film.html` : page de fiche film
+- `actor.html` : page de fiche acteur
+- `news.html` : page d'article
+
+Ces pages sont interconnectées et partagent une feuille de style commune `styles.css`.
