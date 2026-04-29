@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIRepute</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">✦ AIRepute</div>
+    <nav>
+      <a>Product</a><a>Features</a><a>How it works</a><a>Pricing</a>
+    </nav>
+    <button class="btn primary">Start Free Trial</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>See how AI sees <span>your brand.</span></h1>
+        <p>Entrez votre entreprise, nous générons les prompts, lançons les tests et livrons un rapport clair.</p>
+        <div class="runbox">
+          <input id="company" placeholder="Nom de l'entreprise ou site" />
+          <button id="runBtn" class="btn primary">Run AI Reputation Test</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>AI Reputation Score</h3>
+        <div id="score" class="score">-- /100</div>
+        <p id="summary">Lancez un test pour voir le score.</p>
+      </div>
+    </section>
+
+    <section class="report card">
+      <h3>Report</h3>
+      <table id="reportTable">
+        <thead><tr><th>Query</th><th>Category</th><th>ChatGPT</th><th>Claude</th><th>Gemini</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
